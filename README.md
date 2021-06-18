@@ -1,3 +1,3 @@
 # Check dictionary layout
 
-Check Crystallographic Information Framework (CIF) dictionary against style guide.
+Check Crystallographic Information Framework (CIF) dictionaries against style guide.
