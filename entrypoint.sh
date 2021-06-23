@@ -13,6 +13,7 @@ whoami
 pwd
 
 echo $HOME
+export JULIA_DEPOT_PATH="/root/.julia:/usr/local/julia/local/share/julia:/usr/local/julia/share/julia"
 julia -e 'import Pkg;Pkg.status()'
 
 for file in *.dic
