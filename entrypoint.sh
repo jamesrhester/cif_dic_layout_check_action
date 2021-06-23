@@ -1,4 +1,4 @@
-#!/bin/bash -l
+#!/bin/bash
 # get Julia tools 
 
 git clone https://github.com/jamesrhester/julia_cif_tools
@@ -11,7 +11,7 @@ shopt -s nullglob
 for file in *.dic
 do	
 	echo Checking $file ....
-	/usr/local/julia/bin/julia julia_cif_tools/linter.jl $file cif_core/ddl.dic
+	julia julia_cif_tools/linter.jl $file cif_core/ddl.dic
 	if [ $? != 0 ] 
 	then 
 		exit 1 ;
