@@ -1,9 +1,5 @@
 name: 'CIF dictionary layout check'
 description: 'Check the supplied file conforms to DDLm dictionary layout rules'
-inputs:
-        dic-file:
-                description: 'File to check'
-                required: true
 
 outputs:
         result:
@@ -12,5 +8,3 @@ outputs:
 runs:
         using: 'docker'
         image: 'Dockerfile'
-        args:
-                - ${{ inputs.dic-file }}

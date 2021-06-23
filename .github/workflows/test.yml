@@ -1,0 +1,18 @@
+# A test workflow to make sure the action works
+#
+name: DictionaryLayoutCheck
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: checkout
+        uses: actions/checkout@v2
+      - name: one_dict_layout
+        uses: ./
+        id: dictionary_layout_action
