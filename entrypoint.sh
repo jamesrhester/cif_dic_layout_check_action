@@ -10,6 +10,9 @@ shopt -s nullglob
 
 whoami
 
+pwd
+
+echo $HOME
 julia -e 'import Pkg;Pkg.status()'
 
 for file in *.dic
