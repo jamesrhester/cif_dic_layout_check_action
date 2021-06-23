@@ -8,6 +8,10 @@ git clone https://github.com/COMCIFS/cif_core
 
 shopt -s nullglob
 
+whoami
+
+julia -e 'import Pkg;Pkg.status()'
+
 for file in *.dic
 do	
 	echo Checking $file ....
