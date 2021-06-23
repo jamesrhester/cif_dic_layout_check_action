@@ -8,8 +8,6 @@ git clone https://github.com/COMCIFS/cif_core
 
 shopt -s nullglob
 
-cd /home
-
 for file in *.dic
 do	
 	echo Checking $file ....
