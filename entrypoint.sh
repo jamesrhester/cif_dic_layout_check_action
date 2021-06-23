@@ -11,7 +11,7 @@ shopt -s nullglob
 for file in *.dic
 do	
 	echo Checking $file ....
-	/usr/local/julia/bin/julia /julia_cif_tools/linter.jl $file /cif_core/ddl.dic
+	/usr/local/julia/bin/julia julia_cif_tools/linter.jl $file cif_core/ddl.dic
 	if [ $? != 0 ] 
 	then 
 		exit 1 ;
