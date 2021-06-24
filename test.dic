@@ -1281,7 +1281,6 @@ save_import_details.order
     _type.source                  Assigned
     _type.container               Single
     _type.contents                Integer
-    _units.code                   none
 
 save_
 
