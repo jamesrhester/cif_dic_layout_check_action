@@ -57,12 +57,4 @@ jobs:
     steps:
       - name: one_dict_layout
         run: |
-           for file in main/*.dic
-              do
-              echo "Checking $file"
-              julia -O0 julia_cif_tools/linter.jl $file cif_core/ddl.dic 
-              if [ $? != 0 ]
-              then
-                exit 1 ;
-              fi
-              done
+               echo "Checking $file"
