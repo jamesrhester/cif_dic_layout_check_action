@@ -751,6 +751,7 @@ save_dictionary_valid.application
     _type.container               List
     _type.dimension               '[2]'
     _type.contents                Code
+    _method.purpose               Evaluation
     _method.expression
 ;
     _dictionary_valid.application
@@ -1078,6 +1079,7 @@ save_import.get
     _type.container               List
     _type.contents                ByReference
     _type.contents_referenced_id  '_import_details.single'
+    _method.purpose               Evaluation
     _method.expression
 ;
      imp_order_list = []
@@ -1302,6 +1304,7 @@ save_import_details.single
     _type.contents                Text
     _type.indices                 ByReference
     _type.indices_referenced_id   '_import_details.single_index'
+    _method.purpose               Evaluation
     _method.expression
 ;
     with id as import_details
