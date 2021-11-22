@@ -19,7 +19,7 @@ julia -e 'import Pkg;Pkg.status()'
 for file in *.dic
 do	
 	echo Checking $file ....
-	julia -O0 julia_cif_tools/linter.jl -i ./cif_core $file cif_core/ddl.dic
+	julia -O0 julia_cif_tools/linter.jl -i /github/workspace/cif_core $file cif_core/ddl.dic
 	if [ $? != 0 ] 
 	then 
 		exit 1 ;
